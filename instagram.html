@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+        body{
+            color: black;
+            background-color: white;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .clone {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .left {
+            border: 1px solid rgb(221, 211, 211);
+            height: 100vh;
+            width: 18vw;
+            position: fixed;
+        }
+
+        .right {
+
+            height: 100vh;
+            width: 82vw;
+            margin-left: 18vw;
+        }
+
+        .header {
+            /* border: 1px solid black; */
+            height: 12vh;
+
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            position: relative;
+
+        }
+
+        li {
+            list-style: none;
+            border: 2px solid black;
+            border-radius: 77px;
+            border-color: rgb(255 89 70);
+            height: 32px;
+            width: 32px;
+            margin-top: 5px;
+            position: relative;
+            font-size: x-small;
+            font-weight:100 ;
+        }
+        li .posi{
+            position: absolute;
+            top: 20px;
+            left:20px;
+        }
+
+        .header2 {
+            height: 12px;
+            width: 40px;
+            
+        }
+
+        .instalogo {
+            margin: 10px;
+            margin-bottom: 40px;
+        }
+
+        .othersec {
+            margin-top: 95px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           row-gap: 25px;
+        }
+        .position{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            column-gap: 22px;
+            cursor: pointer;
+            font-family: "Tajawal", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+
+           
+        }
+        .explore{
+            display: flex;
+          column-gap: 20px;
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            margin-top: 5px;
+        }
+
+        .block{
+            margin: 25px;
+            /* border: 1px solid black; */
+            height: 78vh;
+            width: 40vw;
+        }
+        .name{
+            /* border: 1px solid black; */
+            height: 8vh;
+            width:40vw ;
+            display: flex;
+            flex-direction: row;
+            gap: 4px;
+            align-items: center;
+        }
+
+        .dp{
+            margin: 5px;
+            height: 25px;
+            width: 27px;
+            border-radius: 32px;
+            font-family: "Tajawal", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+
+        }
+        .pic{
+           height: 70vh;
+           width: 40vw;
+        }
+        .position:hover{
+            background-color:rgb(242 242 242);
+            margin-left: 20px;
+            padding: 5px 40px 5px 0;
+            transition: all 0.2s ease-out;
+           
+           
+            
+        }
+        
+        .stories{
+            height: 32px;
+            width:32px;
+            border-radius: 77px;
+          
+        }
+        .likes{
+        display: flex;
+        justify-content: space-between;
+        }
+        .reach{
+           display: flex;
+           flex-direction: row;
+           gap: 15px;
+        }
+       @media  screen and (max-width:1000px) {
+        .block {
+            height: 350px;
+            width: 300px;
+            margin: 50px;
+           
+            
+        }
+        .pic{
+            height: 350px;
+            width: 300px;
+        }
+        .content{
+           margin-top: 0px;
+        }
+        .left{
+            font-size: larger;
+            font-weight: bolder;
+        }
+        .header{
+            height: 30px;
+        }
+       }
+       @media screen and (max-width:400px)  {
+        .block{
+            height: 300px;
+            width: 250px;
+        }
+        .pic{
+            height: 300px;
+            width: 250px; 
+        }
+        .header{
+            height: 10px;
+        }
+       }
+        
+    </style>
+    <div class="clone">
+
+
+        <div class="left">
+            <div class="header2">
+                <img class="instalogo" src="instagramlogo.svg" srcset="">
+           
+            </div>
+            <div class="othersec">
+                <div class="home  position">
+                    <img src="home.svg" alt="" srcset="">
+                    Home
+                </div>
+                <div class="search position">
+                <img src="search.svg" alt="" srcset="">
+                Search
+                </div>
+                <div class="expolore  position">
+                <img src="explore.svg" alt="" srcset="">
+                Explore
+                </div>
+                <div  class="reels position">
+                <img src="reels.svg" alt="" srcset="">
+                Reels 
+                </div>
+                <div class="message position">
+                  <img src="message.svg" alt="" srcset="">
+                  Mess
+                </div>
+                <div class="notification  position">
+                  <img src="notifcation.svg" alt="" srcset="">
+                   Notify
+                </div>
+                <div class="profile position">
+                <img src="profile.svg" alt="" srcset="">
+                Profile
+                </div>
+            </div>
+
+        </div>
+        <div class="right">
+            <div class="header">
+                <ul>
+                    <li class="add"><img  class="stories" src="mystory.jpg"  alt="" >
+                        <img src="plus.svg" class="posi" alt="" srcset="">
+                      mystory
+                    </li>
+                    <li> <img class="stories" src="googlelogo.jpg" alt="">
+                    google
+                    </li>
+                    <li> <img class="stories" src="microsoftlogo.jpg" alt="" >
+                    microsoft</li>
+                    <li><img src="viratdp.jpg" class="stories" alt="">virat.kohli </li>
+                    <li> <img class="stories" src="narendramodi.jpg" alt="" >narendramodi</li>
+                    <li> <img class="stories" src="yogipic.jpg" alt="">yogi</li>
+                    <li> <img class="stories" src="sundarpichaidp.jpg" alt="" >sundarpichai</li>
+                    <li> <img class="stories" src="salmandp.jpg" alt="">salmankhan</li>
+                    <li><img  class="stories" src="gdgcampus.jpg" alt="" srcset="">gdg_camp </li>
+                    <li> <img class="stories" src="linkdinlogo.jpg" alt="" srcset="">linkdin</li>
+                </ul>
+            </div>
+            <div class="content">
+                <!-- <img src="hamburger.svg" alt="" srcset=""> -->
+                <div class="block1  block">
+                 <div class="name">
+                    <img src="viratdp.jpg" class="dp" alt="" srcset="">
+                     virat.kohli 
+                     <img src="verify.svg" alt="" srcset="">
+                 </div>
+
+                 <div>
+                    <img src="viratpic.jpg" class="pic" alt="" srcset=""> 
+                   <div class="likes">
+                    <div class="reach">
+                    <img src="notification2.svg" alt="" srcset="">20M
+                    <img src="comments.svg" alt="" srcset="">500k
+                    <img src="share.svg" alt="" srcset="">10M
+                   </div>
+                  <div class="save">
+                    <img src="save.svg" alt="" srcset="">
+                  </div>
+                </div>
+                   
+                </div>
+             
+                </div>
+                <div class="block2  block">
+                 <div class="name">
+                  <img src="narendramodi.jpg" class="dp" alt="" srcset="">
+                   narendramodi
+                    <img src="verify.svg" alt="" srcset="">
+                 </div>
+                 <div>
+                 <img src="modi2024.jpg" class="pic" alt="" srcset="">
+                 <div class="likes">
+                    <div class="reach">
+                    <img src="notification2.svg" alt="" srcset="">10M
+                    <img src="comments.svg" alt="" srcset="">200k
+                    <img src="share.svg" alt="" srcset="">5M
+                   </div>
+                  <div class="save">
+                    <img src="save.svg" alt="" srcset="">
+                  </div>
+                </div>
+                   
+                </div>
+                </div>
+               
+                <div class="block3 block">
+                <div class="name">
+                <img src="salmandp.jpg" class="dp" alt="" srcset="">
+                beingsalmankhan
+                <img src="verify.svg" alt="" srcset="">
+                </div>
+                <div>
+                    <img src="salmanpic.jpg" class="pic" alt="" srcset="">
+                    <div class="likes">
+                       <div class="reach">
+                       <img src="notification2.svg" alt="" srcset="">8M
+                       <img src="comments.svg" alt="" srcset="">100k
+                       <img src="share.svg" alt="" srcset="">1M
+                      </div>
+                     <div class="save">
+                       <img src="save.svg" alt="" srcset="">
+                     </div>
+                   </div>
+                      
+                   </div>
+                </div>
+                <div class="block4  block">
+                <div class="name">
+                    <img src="sundarpichaidp.jpg" class="dp" alt="" srcset="">
+                    sundarpichai
+                    <img src="verify.svg" alt="" srcset="">
+                </div>
+                <div>
+                    <img src="sundarpic.jpg" class="pic" alt="" srcset="">
+                    <div class="likes">
+                       <div class="reach">
+                       <img src="notification2.svg" alt="" srcset="">8M
+                       <img src="comments.svg" alt="" srcset="">100k
+                       <img src="share.svg" alt="" srcset="">1M
+                      </div>
+                     <div class="save">
+                       <img src="save.svg" alt="" srcset="">
+                     </div>
+                   </div>
+                      
+                   </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
