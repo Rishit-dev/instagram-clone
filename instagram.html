@@ -362,9 +362,56 @@
             </div>
         </div>
 
-
+     
     </div>
+  document.querySelector(".position").addEventListener("click",()=>{
+    document.querySelector(".position").style.color=black
+})
 
+
+
+// Handle likes
+document.querySelectorAll('.likes .reach img').forEach((likeIcon) => {
+    likeIcon.addEventListener('click', () => {
+        const countElement = likeIcon.nextSibling;
+        const currentLikes = parseInt(countElement.nodeValue.replace(/M|k/g, '').trim()) || 0;
+        const isMillion = countElement.nodeValue.includes('M');
+        const isThousand = countElement.nodeValue.includes('k');
+
+        let updatedLikes = currentLikes + 1;
+        if (isMillion) {
+            countElement.nodeValue = `${updatedLikes}M`;
+        } else if (isThousand) {
+            countElement.nodeValue = `${updatedLikes}k`;
+        } else {
+            countElement.nodeValue = `${updatedLikes}`;
+        }
+    });
+});
+
+// Handle save functionality
+document.querySelectorAll('.save img').forEach((saveIcon) => {
+    saveIcon.addEventListener('click', () => {
+        if (saveIcon.classList.contains('saved')) {
+            saveIcon.src = 'instagram-clone/assets/save.svg'; // Path to unsaved icon
+            saveIcon.classList.remove('saved');
+        } else {
+            saveIcon.src = 'instagram-clone/assets/saved.svg'; // Path to saved icon
+            saveIcon.classList.add('saved');
+        }
+    });
+});
+
+//  hover effect for navigation
+document.querySelectorAll('.position').forEach((navItem) => {
+    navItem.addEventListener('mouseover', () => {
+        navItem.style.backgroundColor = 'rgb(242, 242, 242)';
+    });
+    navItem.addEventListener('mouseout', () => {
+        navItem.style.backgroundColor = 'transparent';
+    });
+});
+  </script>
 </body>
 
 </html>
